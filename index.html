@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="container">
   <div class="header">
     <div class="header-top">
       <div class="logo">
@@ -21,38 +21,56 @@
       </ul>
     </div>
     <div class="header-bottom">
-      <div class="text">
-        <div class="main-text">This website is awesome</div>
-        <div class="secondary-text">This website has some subtext that goes here under the main title.  It's a smaller font and the color is lower contrast</div>
+      <div class="header-left">
+        <h1 class="main-text">This website is awesome</h1>
+        <h3 class="secondary-text">This website has some subtext that goes here under the main title.  It's a smaller font and the color is lower contrast</h3>
         <button>Sign Up</button>
       </div>
-      <img src="images/house.jpeg" alt="sorry no go">
+      <div class="card-image0 house-1"></div>
     </div>
   </div>
 
 <!-- This is when I learned using html symantics is better than just div -->
   
-  <section class="container information">
+  <section class="information">
     <h1 class="title">Some Random Information</h1>
-    <div class="container">
+    <div class="container all-cards">
       <div class="cards">
         <div class="card-image house-1"></div>
-        <p class="image-content">This is some subject under an illistartion or image</p>
+        <p class="image-content">This is some subject under an illustration or image</p>
       </div>
       <div class="cards">
         <div class="card-image"></div>
-        <p class="image-content">This is some subject under an illistartion or image</p>
+        <p class="image-content">This is some subject under an illustration or image</p>
       </div>
       <div class="cards">
         <div class="card-image"></div>
-        <p class="image-content">This is some subject under an illistartion or image</p>
+        <p class="image-content">This is some subject under an illustration or image</p>
       </div>
       <div class="cards">
         <div class="card-image"></div>
-        <p class="image-content">This is some subject under an illistartion or image</p>
+        <p class="image-content">This is some subject under an illustration or image</p>
       </div>
     </div>
   </section>
 
+  <section class="quote">
+    <blockquote>
+      This is an inspiring quote, or a testimonial from a customer.
+      Maybe it's just filling up space, or maybe people will actually read it.  
+      Who knows? All I know is that it looks nice.
+    </blockquote>
+    <p>-Thor, God of Thunder</p>
+  </section>
+
+  <section class="container action">
+    <div>
+      <h3>Call to action!  It's time!</h3>
+      <h5>Sign up for our product by clicking that button right over there!</h5>
+    </div>
+    <div>
+      <button class="bottom-button">Sign Up</button>
+    </div>
+  </section>
 </body>
 </html>

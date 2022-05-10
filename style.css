@@ -4,12 +4,22 @@
   box-sizing: border-box;
 }
 
-.header {
-  padding: 10px 100px 50px 100px;
-  background: #1F2937;
+.container {
+  display: flex;
 }
 
-.header-top {
+body {
+  flex-direction: column;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 100px 50px 100px;
+  background: #1F2937;
+  flex: 1;
+}
+
+.header-top  {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -36,27 +46,24 @@ a {
 
 .header-bottom {
   display: flex;
-  padding-top: 50px;
-  gap: 20px;
+  margin-top: 30px;
 }
 
-.text {
-  display: flex;
-  flex-direction: column;
+.header-left {
   flex: 1;
-  align-items: flex-start;
-  justify-content: space-evenly;
 }
 
 .main-text {
   color: #F9FAF8;
   font-size: 48px;
   font-weight: bolder;
+  margin-bottom: 10px;
 }
 
 .secondary-text {
   color: #E5E7EB;
   font-size: 18px;
+  margin-bottom: 10px;
 }
 
 button {
@@ -67,36 +74,30 @@ button {
   border-radius: 4px;
 }
 
-img {
-  min-width: 0;
-  max-width: none;
+
+
+.information {
+  align-items: center;
+  justify-content: center;
+  padding: 0px 160px 50px;
   flex: 1;
 }
 
-.container {
-  display: flex;
-}
-
-.information {
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 0px 150px;
-}
-
 .title {
-  padding: 20px;
+  padding: 50px;
   font-size: 36px;
   font-weight: bolder;
   color: #1F2937;
+  text-align: center;
+}
+
+.all-cards {
+  justify-content: space-between;
 }
 
 .cards {
   width: 125px;
-  margin: 0px 15px;
   color: #3882F6;
-  align-items: center;
-  justify-content: center;
 }
 
 .card-image {
@@ -109,7 +110,6 @@ img {
 }
 
 
-
 .image-content {
   text-align: justify;
   text-align-last: center;
@@ -119,3 +119,42 @@ img {
 .house-1 {
   background-image: url("images/house.jpeg");
 }
+
+.card-image0 {
+  flex: 1 0 auto;
+  height: auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 20px;
+  
+}
+
+.quote {
+  padding: 50px 145px;
+  font-size: 36px;
+  background-color: #E5E7EB;
+  flex: 1 1 0;
+}
+
+p {
+  text-align: right;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.action {
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3882F6;
+  border-radius: 10px;
+  padding: 20px 50px;
+  margin: 50px;
+  color: white;
+}
+
+.bottom-button {
+  border-style: solid;
+  border-color: white;
+}
+
+
